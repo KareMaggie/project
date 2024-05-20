@@ -5,15 +5,16 @@ body{
         height: 100vh;
         padding: 0px;
         margin: 0px;
+        position: relative;
 }
-header{
+h1{
     text-align: center;
     color: blue;
 }
 
-h1{
+header{
     color: aqua;
 }
-h2{
+h1{
     color: aqua;
 }
