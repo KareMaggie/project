@@ -7,11 +7,17 @@ ul li{
     text-align: center;
     background-color: blueviolet;
  }
- .container{
+ .container img{
    
     text-align: center;
  }
 #container2 img {
     height: 400px;
     object-fit: cover;
+}
+p{
+    text-align: center;
+}
+#class img{
+     
 }
