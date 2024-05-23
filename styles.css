@@ -1,59 +1,77 @@
-ul li{
+.heading {
+    font-family: Arial, sans-serif; 
+    font-size: 24px;
+    color: blueviolet; 
+    text-align: center;
+    background-color: brown;
+}
+nav {
+    text-align: center;
     list-style-type: none;
-    margin: 0px;
-    display: inline;
-}
- h1{
-    text-align: center;
-    background-color: blueviolet;
- }
- .container img{
-   
-    text-align: center;
- }
-#container2 img {
-    height: 400px;
-    object-fit: cover;
-}
-p{
-    text-align: center;
-}
-#class {
-    text-align: center; 
-}
-.carousel-item img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
-main {
-    float: left; 
-    width: 70%; 
-}
-
-aside {
-    float: right; 
-    width: 30%; 
-    text-align: center; 
-}
-
-img {
-    max-width: 100%;
-    height: auto; 
-}
-
-.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
     display: block;
   }
-  
-  .dropdown-menu {
-    margin-top: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-  
+.logo {
+    position: absolute;
+    height: auto;
+    right: 0px;
+    width: 50px;
+}
+ .collections img{
+    width: 56%;
+    margin: 1px auto;
+    display: block;
+}
+.collections p{
+    text-align: center;
+}
 
+.carousel-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+.carousel-inner img {
+    width: 1024px; 
+    height: 683px; 
+    object-fit: cover; 
+s}
 
-
-  
-  

@@ -1,216 +1,198 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NJENAC COLLECTIONS</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <link rel="icon" href="logo.png">
-  <style>
-    .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-      display: block;
-    }
-    .dropdown-menu {
-      margin-top: 0;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-    }
-    .container {
-      margin-top: 20px;
-    }
-    .collections .carousel-item img {
-      max-height: 300px;
-      object-fit: cover;
-      width: 300px;
-    }
-    .carousel-inner img {
-      height: 300px;
-      object-fit: cover;
-    }
-    .footer {
-      padding: 20px;
-      text-align: center;
-      background-color: #f8f9fa;
-    }
-    .footer .footer-links {
-      list-style: none;
-      padding: 0;
-    }
-    .footer .footer-links li {
-      display: inline;
-      margin-right: 15px;
-    }
-  </style>
-</head>
-<body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NJENAC COLLECTIONS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="icon" href="logo.png">
   
-  <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="logo.png" width="30" height="30" alt="">
-      NJENAC COLLECTIONS
-    </a>
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </nav>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="team.html">Team</a>
-            <a class="dropdown-item" href="history.html">History</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
+  </head>
+  <body>
   
-  <div class="container text-center">
-    <img src="nje.jpg" class="img-fluid" alt="blanket">
-    <h2>BEST SELLER</h2>
-    <p>Ksh.2000</p>
-  </div>
-
+<div class="heading">
+  <h1>NJENAC COLLECTIONS</h1>
+  <p>We Provide The Best</p>
+</div>
+<header>
+  <div>
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline float-right">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
   
-  <div id="container2" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="fancy.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Price</h5>
-          <p>Ksh.200</p>
-        </div>
+      <img src="logo.png" alt="Logo" class="logo">
+</div>
+</header>
+
+<nav>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>      
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">More</a>
+      <div class="dropdown-content">
+        <a href="about.html">Content</a>
+        <a href="contact.html">Delivery</a>
       </div>
-      <div class="carousel-item">
-        <img src="chiffon.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Price</h5>
-          <p>Ksh.200</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="fan.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Price</h5>
-          <p>Ksh.200</p>
-        </div>
+    </li>    
+  </ul>
+</nav>
+ <div class="collections">
+  <img src="nje.jpg" alt="blanket">
+  <p>Best Product</p>
+  <p>Ksh. 2000</p>
+</div>
+<hr>
+
+<h2> Our Products Country Wide</h2>
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="width: 50%;">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="chiffon.jpg" class="d-block w-100 h-300" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Chiffon Top</h5>
+        <p>Ksh.150</p>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </button>
-  </div>
-
-  
-  <div class="collections container text-center">
-    <h3>NEW PRODUCTS</h3>
-    <div id="newProductsCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="ppillooww.jpg" class="d-block w-100" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="njen.jpg" class="d-block w-100" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="pillow.jpg" class="d-block w-100" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="throw pillow.jpg" class="d-block w-100" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="f.jpg" class="d-block w-100" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="h.jpg" class="d-block w-100" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="k.jpg" class="d-block w-100" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="m.jpg" class="d-block w-100" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="n.jpg" class="d-block w-100" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="o.jpg" class="d-block w-100" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="r.jpg" class="d-block w-100" alt="">
-        </div>
+    <div class="carousel-item">
+      <img src="fancy.jpg" class="d-block w-100 h-300" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Chiffon Top</h5>
+        <p>Ksh.150</p>
       </div>
-      <a class="carousel-control-prev" href="#newProductsCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#newProductsCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
-  </div>
-  <hr>
-
-  
-  <main class="container text-center">
-    <h2>The History Of Njenac Collections</h2>
-    <p>The Njenac Collections Was started in the year 2014. 
-    It Was formed By Our Founder Nancy Njeri After Hitting Rock Bottom. 
-    She Started With One Bale which costed her about Ksh.3000 
-    She Was Helped By Our Inverstors. 
-    </p> 
-  </main> 
-
-  <aside>
-<img src="logo.png" alt="">
-  </aside>
-
-  
-  
-
-  
-  <footer class="footer">
-    <div class="container">
-      <ul class="footer-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms of Service</a></li>
-      </ul>
+    <div class="carousel-item">
+      <img src="top.jpg" class="d-block w-100 h-300" alt="...">
       
-  </footer>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Chiffon Top</h5>
+        <p>Ksh.150</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+</div>
+<div class="collections">
+<img src="tops.jpg" alt="">
+<p>Most Sold</p>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-</body>
-</html>
+<h2> Best Seller</h2>
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="width: 50%;">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="k.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="h.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="m.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pillow</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="n.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pillow</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="njenav.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pillow</h5>
+        <p>Ksh.500</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="o.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pillow</h5>
+        <p>Ksh.500</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="pillow.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pillow</h5>
+        <p>Ksh.500</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="ppillooww.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pillow</h5>
+        <p>Ksh.500</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="r.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pillow</h5>
+        <p>Ksh.500</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="throw pillow.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pilllow</h5>
+        <p>Ksh.500</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+</div>
+
+
+
+
+
+
+  
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script src="index.jss"></script>
+  </body>
+  </html>
