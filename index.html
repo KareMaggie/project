@@ -3,91 +3,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NJENAC COLLECTIOS</title>
+  <title>NJENAC COLLECTIONS</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="icon" href="logo.png">
+  <style>
+    .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu {
+      margin-top: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    .container {
+      margin-top: 20px;
+    }
+    .collections .carousel-item img {
+      max-height: 300px;
+      object-fit: cover;
+      width: 300px;
+    }
+    .carousel-inner img {
+      height: 300px;
+      object-fit: cover;
+    }
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+    .footer .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+    .footer .footer-links li {
+      display: inline;
+      margin-right: 15px;
+    }
+  </style>
 </head>
 <body>
-  <h1>NJENAC COLLECTIONS</h1>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-<nav class="navbar navbar-light bg-light">
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
-</nav>
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-</nav>
-<div class="container">
-<img src="nje.jpg" alt="blanket">
-<h2>BEST SELLER</h2>
-<p>Ksh.2000</p>
-</div>
-<div id="container2" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="fancy.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Price</h5>
-        <p>Ksh.200</p>
+  
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" width="30" height="30" alt="">
+      NJENAC COLLECTIONS
+    </a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="team.html">Team</a>
+            <a class="dropdown-item" href="history.html">History</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <div class="container text-center">
+    <img src="nje.jpg" class="img-fluid" alt="blanket">
+    <h2>BEST SELLER</h2>
+    <p>Ksh.2000</p>
+  </div>
+
+  
+  <div id="container2" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="fancy.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Price</h5>
+          <p>Ksh.200</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="chiffon.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Price</h5>
+          <p>Ksh.200</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="fan.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Price</h5>
+          <p>Ksh.200</p>
+        </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="chiffon.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Price</h5>
-        <p>Ksh.200</p>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+
+  
+  <div class="collections container text-center">
+    <h3>NEW PRODUCTS</h3>
+    <div id="newProductsCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="ppillooww.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="njen.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="pillow.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="throw pillow.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="f.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="h.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="k.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="m.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="n.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="o.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="r.jpg" class="d-block w-100" alt="">
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <img src="fan.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Price</h5>
-        <p>Ksh.200</p>
-      </div>
+      <a class="carousel-control-prev" href="#newProductsCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#newProductsCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </button>
-</div>
-<div id="class">
-  <img src="tops.jpg" alt="">
-  <h2>BEST SELLER</h2>
-  <p>Chiffon Tops</p>
-</div>
-<hr>
-<div class="collections">
-  <h3>NEW PRODUCTS</h3>
-  <img src="ppillooww.jpg" alt=""> 
-  <img src="njen.jpg" alt="">
-  <img src="pillow.jpg" alt="">
-  <img src="throw pillow.jpg" alt="">
-  <img src="f.jpg" alt="">
-  <img src="h.jpg" alt="">
-  <img src="k.jpg" alt="">
-  <img src="m.jpg" alt="">
-  <img src="n.jpg" alt="">
-  <img src="o.jpg" alt="">
-  <img src="r.jpg" alt="">
-</div>
-    
+  <hr>
+
+  
+  <main class="container text-center">
+    <h2>The History Of Njenac Collections</h2>
+    <p>The Njenac Collections Was started in the year 2014. 
+    It Was formed By Our Founder Nancy Njeri After Hitting Rock Bottom. 
+    She Started With One Bale which costed her about Ksh.3000 
+    She Was Helped By Our Inverstors. 
+    </p> 
+  </main> 
+
+  <aside>
+<img src="logo.png" alt="">
+  </aside>
+
+  
+  
+
+  
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+      
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </body>
 </html>
